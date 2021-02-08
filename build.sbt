@@ -7,3 +7,7 @@ scalaVersion := "2.13.4"
 libraryDependencies ++= Dependency()
 
 scalacOptions += "-Ymacro-annotations"
+
+scalacOptions --= Seq(
+  "-Xlint:nullary-override",
+)
