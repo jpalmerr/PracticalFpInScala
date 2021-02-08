@@ -14,6 +14,8 @@ object Dependency {
     val Http4s        = "0.21.3"
     val Circe         = "0.13.0"
     val CirceDerivation = "0.13.0-M5"
+    val Log4cats      = "1.1.1"
+    val CatsRetry     = "2.0.0"
   }
 
   val deps: Seq[ModuleID] = Seq(
@@ -33,7 +35,9 @@ object Dependency {
     "org.http4s"                 %% "http4s-dsl"           % Version.Http4s,
     "io.circe"                   %% "circe-core"           % Version.Circe,
     "io.circe"                   %% "circe-parser"         % Version.Circe,
-    "io.circe"                   %% "circe-derivation"     % Version.CirceDerivation
+    "io.circe"                   %% "circe-derivation"     % Version.CirceDerivation,
+    "io.chrisdavenport"          %% "log4cats-slf4j"       % Version.Log4cats,
+    "com.github.cb372"           %% "cats-retry"           % Version.CatsRetry
   )
 
   val compilerPlugins: Seq[ModuleID] = Seq(

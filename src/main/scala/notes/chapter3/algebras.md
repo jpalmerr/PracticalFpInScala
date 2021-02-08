@@ -34,4 +34,3 @@ interface that abstracts over the effect type.
 
 If you find yourself needing to add a typeclass constraint, such as Monad, to your algebra,
 what you truly need is a program.
-

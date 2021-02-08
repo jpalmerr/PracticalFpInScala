@@ -1,6 +1,6 @@
 package shoppingCart.domain
 
-import squants.Money
+import squants.market.Money
 
 case class Order(orderId: OrderId, paymentId: PaymentId, items: Map[Item, Int], total: Money)
 

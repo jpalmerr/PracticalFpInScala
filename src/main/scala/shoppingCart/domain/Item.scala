@@ -1,6 +1,6 @@
 package shoppingCart.domain
 
-import squants.Money
+import squants.market.Money
 
 import java.util.Currency._
 //import eu.timepit.refined.string.Uuid
