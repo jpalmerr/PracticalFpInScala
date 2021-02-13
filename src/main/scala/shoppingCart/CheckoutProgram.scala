@@ -1,12 +1,13 @@
-package notes.chapter4
+package shoppingCart
 
 import cats.effect.Timer
-import cats.syntax.all._
+import cats.implicits._
 import io.chrisdavenport.log4cats.Logger
-import notes.chapter4.checkout._
-import notes.chapter4.effects._
 import retry.RetryDetails._
 import retry._
+import shoppingCart.domain.checkout._
+import shoppingCart.domain._
+import shoppingCart.effects.MonadThrow
 import squants.market.Money
 
 import scala.concurrent.duration._
@@ -68,7 +69,7 @@ final class CheckoutProgram[F[_]: Background: Logger: MonadThrow: Timer](
       .flatMap {
         case CartTotal(items, total) =>
           for {
-            pid <- processPayment(Payment(userId, total, card))
+            pid <- processPayment(domain.Payment(userId, total, card))
             order <- createOrder(userId, pid, items, total)
             _ <- shoppingCart.delete(userId).attempt.void
           } yield order

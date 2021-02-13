@@ -1,8 +1,9 @@
-package notes.chapter4
+package shoppingCart.domain
 
 import cats.effect._
 import cats.effect.implicits._
 import cats.syntax.all._
+
 import scala.concurrent.duration.FiniteDuration
 
 /**

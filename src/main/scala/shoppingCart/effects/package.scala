@@ -1,4 +1,4 @@
-package notes.chapter4
+package shoppingCart
 
 import cats.MonadError
 

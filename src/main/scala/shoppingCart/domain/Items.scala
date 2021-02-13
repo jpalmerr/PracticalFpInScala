@@ -1,7 +1,6 @@
-package notes.chapter4
+package shoppingCart.domain
 
 import eu.timepit.refined.string.Uuid
-import io.estatico.newtype.macros.newtype
 import squants.market.Money
 
 /**

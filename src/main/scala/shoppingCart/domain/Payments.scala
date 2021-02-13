@@ -1,6 +1,6 @@
-package notes.chapter4
+package shoppingCart.domain
 
-import notes.chapter4.checkout.Card
+import shoppingCart.domain.checkout.Card
 import squants.market.Money
 
 //A good practice is to also define a tagless algebra for remote clients.

@@ -1,4 +1,4 @@
-package notes.chapter4
+package shoppingCart.domain
 
 import eu.timepit.refined.string.Uuid
 
