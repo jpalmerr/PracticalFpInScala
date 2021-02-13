@@ -33,6 +33,8 @@ object Dependency {
     "com.github.julien-truffaut" %% "monocle-macro"        % Version.Monocle,
     "org.typelevel"              %% "squants"              % Version.Squants,
     "org.http4s"                 %% "http4s-dsl"           % Version.Http4s,
+    "org.http4s"                 %% "http4s-circe"         % Version.Http4s,
+    "org.http4s"                 %% "http4s-blaze-server"  % Version.Http4s,
     "io.circe"                   %% "circe-core"           % Version.Circe,
     "io.circe"                   %% "circe-parser"         % Version.Circe,
     "io.circe"                   %% "circe-derivation"     % Version.CirceDerivation,

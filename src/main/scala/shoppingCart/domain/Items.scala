@@ -1,6 +1,7 @@
 package shoppingCart.domain
 
 import eu.timepit.refined.string.Uuid
+import shoppingCart.domain.brand._
 import squants.market.Money
 
 /**
